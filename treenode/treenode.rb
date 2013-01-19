@@ -36,10 +36,6 @@ class TreeNode
     child.parent = self
   end
 
-  # def dfs(target)
-  #   if self.left_child[0].nil? && 
-  # end
-
 
   def bfs(target)
     array = [self]
@@ -52,19 +48,27 @@ class TreeNode
     end
     nil
   end
-  #   until self.left_child.nil? && self.right_child.nil?
-  #     array << object.left_child
-  #     array << object.right_child
-  #     object = object.left_child
 
-  # end
-
-  protected
-  
   def parent=(parent)
     @parent = parent
   end
 
 end
+
+# grandpa = TreeNode.new(70)
+# mom = TreeNode.new(35)
+# uncle = TreeNode.new(40)
+# john = TreeNode.new(18)
+# sarah = TreeNode.new(15)
+# max = TreeNode.new(13)
+# abby = TreeNode.new(27)
+
+# mom.parent = grandpa
+# uncle.parent = grandpa
+# mom.set_child(john, :left)
+# mom.set_child(sarah, :right)
+# uncle.set_child(abby, :left)
+# uncle.set_child(max, :right)
+
 
 
